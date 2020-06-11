@@ -1,0 +1,13 @@
+server:
+  port: 10009
+  tomcat:
+    accesslog:
+      directory: /home/sam/testProject/tomcatlogs
+      enabled: true
+      file-date-format: .yyyy-MM-dd
+      max-days: 14
+      pattern: '%h %l %u %t "%r" %s %b %D'
+      prefix: test_access
+      rotate: true
+      suffix: .log
+    basedir: /home/sam/testProject/tomcatlogs

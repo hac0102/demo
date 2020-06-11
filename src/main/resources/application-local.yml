@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  tomcat:
+    accesslog:
+      directory: C:/tomcatlogs/test3
+      enabled: true
+      file-date-format: .yyyy-MM-dd
+      max-days: 14
+      pattern: '%h %l %u %t "%r" %s %b %D'
+      prefix: test_access
+      rotate: true
+      suffix: .log
+    basedir: C:/tomcatlogs/test3
